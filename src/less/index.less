@@ -1,4 +1,5 @@
-@default-color: #3FC2B6;
+@dark-default-color: #3FC2B6;
+@light-defaul-color: #4CCFC1;
 
 * {
     box-sizing: border-box;
@@ -10,16 +11,19 @@ header {
     width: 1400px;
     margin: 0 auto;
     margin-top: 20px;
+    height: 81px;
 
     .logo {
+        justify-self: center;
+
         h1 {
-            color: @default-color;
+            color: @dark-default-color;
         }
     }
 
     .search-field {
         margin-top: 15px;
-
+        justify-self: center;
 
         input {
             width: 350px;
@@ -36,5 +40,46 @@ header {
     .cart {
         justify-self: center;
         margin-top: 5px;
+    }
+}
+
+nav {
+    height: 46px;
+    background-color: @light-defaul-color;
+
+    a {
+        color: #fff;
+    }
+
+    .nav-item {
+        span {
+            display: block;
+            color: #fff;
+            margin-top: 6px;
+        }
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    ul {
+        width: 1400px;
+        margin: 0 auto;
+
+    }
+}
+
+main {
+    section {
+        background-color: @dark-default-color;
+
+        
+        .carousel {
+            .carousel-item {
+                width: 400px;
+                height: 400px;
+            }
+        }
     }
 }
