@@ -1,0 +1,40 @@
+@default-color: #3FC2B6;
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .logo {
+        h1 {
+            color: @default-color;
+        }
+    }
+
+    .search-field {
+        margin-top: 15px;
+
+
+        input {
+            width: 350px;
+            border: 1px solid #777;
+            opacity: 0.3;
+        }
+
+        button {
+            background-color: #fff;
+            border: none;
+        }
+    }
+
+    .cart {
+        justify-self: center;
+        margin-top: 5px;
+    }
+}
